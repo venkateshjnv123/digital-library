@@ -1,0 +1,56 @@
+constructor(props){
+    super(props);
+    this.state = {
+     value : 0 ,};
+}
+addone = () => {
+   this.setState({ value : this.state.value +1});
+  //  let button3=document.getElementById('btnminus');
+  //  if(!(this.state.value)){
+  //    button3.disabled= false ;
+  //  }
+   
+}
+// minusone = () => {
+//   this.setState({ value : this.state.value - 1});
+//   let button1=document.getElementById('btnminus');
+//   if(!(this.state.value)){
+//     button1.disabled= false ;
+//   }
+//   if(this.state.value==1){
+//     button1.disabled= true;
+//   }
+// }
+// resetb = () => {
+//   this.setState({ value: null});
+//    let button2=document.getElementById('btnminus');
+//    button2.disabled=true;
+// }
+// delete = () =>
+//  { document.getElementById('dele').innerHTML=" ";}
+
+//  delete1 = () =>
+//  { document.getElementById('dele1').innerHTML=" ";}
+
+ printvalve = () => {
+   return this.state.value===0 ? 'Zero' : this.state.value ;
+ }
+
+ getclasses=() => {
+   let classes="btn m-2 btn-";
+   classes += this.state.value === 0 ? "warning" : "primary" ;
+   return classes
+  }
+  render(){
+   
+  return (
+    <div className="App" >
+      
+    <span  className={this.getclasses()}>{this.printvalve()}</span>
+    <button className="btn btn-secondary btn-sm m-2 " onClick= {this.addone}> + </button>
+     <button className="btn btn-secondary btn-sm m-2" id='btnminus' onClick= {this.minusone}> - </button>
+    <button className="btn btn-info btn-sm m-2" onClick= {this.resetb}>  reset </button> 
+    <button  className="btn btn-secondary btn-danger btn-sm m-2" onClick={this.delete}> delete</button>
+</div>
+  );
+}
