@@ -21,6 +21,7 @@ import Navigation from './Navbar/Navigation';
 import Send from './dataUpload/Send';
 import Footer from './Navbar/Footer.js';
 import ScrollToTop from './ScrollToTop';
+import Doubt from './DoubtBox/DoubtBox';
 class App extends Component{
 
 render(){
@@ -29,8 +30,9 @@ render(){
       <div className="app"> 
       <ScrollToTop/>
       <Navigation/>
+      <Doubt/>
        <Switch>
-        <Route path='/' exact component={Home} /> 
+        {/* <Route path='/' exact component={Home} />  */}
         <Route path='/team' component={Team} />
         <Route path='/uploads' component={Upload} />
         <Route path='/requests' component={Request} />
