@@ -1,0 +1,74 @@
+.sent{
+    top:-80px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+align-items: center;
+justify-content: center;
+height: 1300px;
+}
+.btn2{
+        top:0px;
+        position: relative;
+        width: 200px;
+        left: -60px;
+        height: 50px;
+        font-family: Philosopher;
+        font-size: 26px;
+        color: #000000;
+        background: #6DD2AE;
+        padding: 8px 12px;
+        margin: 8px;
+        border-radius: 25px;
+        outline: none;
+        border: none;
+}
+.img1{
+    width: 350px;
+    height: 350px;
+    top: 10px;
+    position: relative;
+
+}
+.para1{
+    color: #0D986A;
+    position: relative;
+    width: 600px;
+    height: 50px;
+    font-family: Philosopher;
+    font-size: 26px;
+   top: 30px;
+   left: 120px;
+}
+
+.para2{
+    color: #000000;
+    position: relative;
+    width: 500px;
+    height: 30px;
+    top:35px;
+    left: 70px;
+    font-size: 24px;
+    font-family: Philosopher;
+
+}
+
+.buttons1{
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+
+.img2{
+    width: 500px;
+    top:150px;
+    position: relative;
+}
+@media screen and (max-width: 900px) {
+
+    
+}

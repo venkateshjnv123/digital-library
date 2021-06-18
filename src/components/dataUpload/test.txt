@@ -1,0 +1,18 @@
+<label name="file" > Upload a image or file: </label><br/>
+                     <input type="file" name="file"/><br/>
+                     <h5> Or</h5>
+                     <label name="name"> Name of the Company:  </label><br/>
+                     <input name="name" type="text"/> <br/>
+                     <label name="source"> Role : </label><br/>
+                     <input name="source" type="text"/> <br/>
+                     <label name="channel"> Stipend: </label><br/>
+                     <input name="channel" type="text"/> <br/>
+                     <label name="des"> Description : </label><br/>
+                     <input name="des" type="text"/> <br/>
+                     <label name="eligi"> eligibility : </label><br/>
+                     <input name="eligi" type="text"/> <br/>
+                     <label name="date"> Last date to apply : </label><br/>
+                     <input name="date" type="date"/> <br/>
+                     <input name="branch" type="text" placeholder="paste the link here" />
+                     <br/>
+                     <input type='submit'/> 
