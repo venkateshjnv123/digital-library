@@ -1,0 +1,182 @@
+.Logo{
+    right: 100px;
+    position: absolute;
+    top: 150px;
+    width: 450px;
+    height: 470px;
+    filter: drop-shadow(0px, 4px, 4px, #000000);
+
+    
+}
+.main{
+    height: 1000px;
+}
+.Logo2{
+    left: 200px;
+    position: absolute;
+    top: 10px;
+    width: 500px;
+    height: 550px;
+    border-radius: 24px;
+    filter: drop-shadow(0px, 4px, 4px, #000000);
+
+    
+}
+.head{
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    left: 220px;
+    top: 100px;
+    font-family: Philosopher;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    color: #000000;
+}
+.para{
+    position: absolute;
+    width: 400px;
+    left: 220px;
+    top: 170px;
+    font-family: Philosopher;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    letter-spacing: 0.2px;
+    color: #000000;
+
+}
+
+.buttons{
+    left:500px;
+    top: 500px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+
+}
+.btn1{
+    width: 200px;
+    height: 50px;
+    font-family: Philosopher;
+    font-size: 26px;
+    color: #000000;
+    background: #6DD2AE;
+    padding: 8px 12px;
+    margin: 8px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+}
+.btn1:hover{
+    box-shadow: 0 0 0 2px darkgreen;
+}
+
+i:hover{
+    color: black;
+}
+
+.circle{
+    height: 80px;
+    width: 80px;
+    top: 800px;
+    left:250px;
+    position: absolute;
+    border-radius: 50%;
+    background: #6DD2AE;
+}
+i{
+    justify-self: center;
+    position: relative;
+    top:20px;
+    left:20px;
+    font-size: 36px;
+    color: white;
+    align-self: center;}
+
+
+@media screen and  (max-width: 960px){
+    .Logo{width: 231px;
+    height: 240px;
+    right: 50px;
+    top: 160px;
+    position: absolute;
+    filter: drop-shadow(0px, 4px, 4px, #000000);}
+
+    .Logo2{width: 360px;
+        height: 380px;
+        left: 0px;
+        top: 60px;
+        position: absolute;
+        filter: drop-shadow(0px, 4px, 4px, #000000);}
+
+        .head{
+            position: absolute;
+            width: 300px;
+            height: 50px;
+            left: 10px;
+            top: 100px;
+            font-family: Philosopher;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            color: #000000;
+        }
+
+
+        .para{
+            position: absolute;
+            width: 250px;
+            left: 16px;
+            top: 150px;
+            font-family: Philosopher;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            letter-spacing: 0.2px;
+            color: #000000;
+        
+        }
+        
+        .buttons{
+            left:120px;
+            top: 500px;
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+        
+        }
+        .btn1{
+            width: 150px;
+            height: 35px;
+            font-family: Philosopher;
+            font-size: 16px;
+            color: #000000;
+            background: #6DD2AE;
+            padding: 4px 8px;
+            margin: 5px;
+            border-radius: 17.5px;
+            outline: none;
+            border: none;
+        }
+
+        
+.circle{
+    height: 60px;
+    width: 60px;
+    top: 700px;
+    left: 300px;
+    position: absolute;
+    border-radius: 50%;
+    background: #6DD2AE;
+}
+i{
+    justify-self: center;
+    position: relative;
+    top:17px;
+    left:17px;
+    font-size: 24px;
+    align-self: center;}
+    
+}
