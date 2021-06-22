@@ -5,6 +5,7 @@ import Leave2 from '../images/detail leaves2.svg';
 import Img1 from '../images/detail img.svg';
 import Img2 from '../images/detail img2.svg';
 //import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
 function Edit(){
     var course=["Degree","Btech","Mtech","Bca","Mca","Mba","BS-MS","Diploma","Mbbs"];
     var list=["Degree","Btech","Mtech","Mba","BS-MS","Diploma"];
