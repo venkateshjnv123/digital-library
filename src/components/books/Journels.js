@@ -1,6 +1,7 @@
 import React from 'react';
 import './Journels.css';
 import Courseimg1 from '../images/journels img.svg';
+
 //import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 //import Btechimg2 from './images/btechsubjectnotfoundimg.svg';
