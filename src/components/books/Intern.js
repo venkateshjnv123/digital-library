@@ -24,6 +24,7 @@ function Intern(){
         stipend:"5000",
         website:"something"
       },
+               
       {
         company:"Magic of Maths",
         eligibility:"BS Grewal",
