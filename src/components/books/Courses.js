@@ -7,6 +7,7 @@ import Courseimg1 from '../images/course img.svg';
 //import {Link} from 'react-router-dom';
 //import Requestleaves from './images/start img2.svg';
 
+
 function Courses(){
     var array=[{
         book:"Magic of Maths",
