@@ -353,6 +353,7 @@ function Details(){
             }
            
         }
+    
         console.log(state.selectedbranch);
     return(
 <div style={{overflow:"visible"}} className="datail container">
