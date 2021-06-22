@@ -1,0 +1,44 @@
+.start .p1{
+    font-family: Satisfy;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 20px;
+/* or 100% */
+
+letter-spacing: 0.2px;
+color: #046844;
+}
+.start .p2{
+    font-family: Satisfy;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 20px;
+/* or 100% */
+
+letter-spacing: 0.2px;
+
+color: #000000;
+}
+.start button{
+    background: #6DD2AE;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 25px;
+width: 100px;
+margin-top: 80px;
+font-family: Philosopher;
+font-style: normal;
+font-weight: normal;
+font-size: 25px;
+line-height: 20px;
+/* identical to box height, or 67% */
+
+letter-spacing: 0.2px;
+
+color: #000000;
+padding: 5px;
+}
+.sent{
+    margin-top: 100px;
+}
