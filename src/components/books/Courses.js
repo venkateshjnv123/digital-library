@@ -83,7 +83,6 @@ function Courses(){
           if (txt.toUpperCase().indexOf(filter) > -1) {
            
         document.getElementById(array[i].book).style.display = "";
-        count++;
           }
      else {
          document.getElementById(array[i].book).style.display= "none";
