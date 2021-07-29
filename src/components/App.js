@@ -21,6 +21,13 @@ import Doubt from './DoubtBox/DoubtBox';
 import Question from './DoubtBox/Question';
 import Unotes from './dataUpload/Notes';
 import ULogin from './Profile/profile';
+import Btechsubject from './books/Btechsubject.js';
+import Details from './profile/Details.js';
+import Request from './request/Request.js';
+import Videos from './books/Videos.js';
+import Courses from './books/Courses.js';
+import Journels from './books/Journels.js';
+import Intern from './books/Intern.js';
 class App extends Component{
 
 render(){
@@ -42,7 +49,13 @@ render(){
         <Route path='/unotes' component={Unotes}/>
         <Route path='/login' component={ULogin}/>
   
-        
+        <Route path="/btechsubject" component={Btechsubject} />
+          <Route path="/video" component={Videos} />
+      <Route path="/detail" component={Details} />
+           <Route path="/intern" component={Intern} />
+    <Route path="/journal" component={Journels} />
+      <Route path="/course" component={Courses} />
+        <Route path="/request" component={Request} />
 
       </Switch> 
       <Footer/>
