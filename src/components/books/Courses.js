@@ -72,12 +72,8 @@ function Courses(){
     id:5
   },
 ];
-    var t=0;
-    function filterFunction() {
-      var count=0;
-        //document.getElementById("siva1").style.display="none";
-        //var siva=[];
-       // var k=0;
+    
+    function filterFunction() { 
         console.log("10");
         var input, filter,i;
         input = document.getElementById("myInput");
@@ -89,7 +85,6 @@ function Courses(){
         document.getElementById(array[i].book).style.display = "";
         count++;
           }
-        //console.log(a[i]);
      else {
          document.getElementById(array[i].book).style.display= "none";
       
