@@ -1,10 +1,7 @@
-import React,{useState} from 'react';
-import './Detail.css'
-import Leave1 from '../images/detail leaves.svg';
-import Leave2 from '../images/detail leaves2.svg';
-import Img1 from '../images/detail img.svg';
-import Img2 from '../images/detail img2.svg';
-//import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import React,{useState,useEffect} from 'react';
+import './Detail.css';
+import Personal from '../images/detailpersonal.svg';
+import Education from '../images/detaileducation.svg';
 function Details(){
     var course=["Degree","Btech","Mtech","Bca","Mca","Mba","BS-MS","Diploma","Mbbs"];
     var list=["Degree","Btech","Mtech","Mba","BS-MS","Diploma"];
@@ -336,7 +333,8 @@ function Details(){
             " Diploma in sanitary inspector",
             " Diploma in audiology and speech therapy",
             " Diploma in x-ray technology"];
-        const[state,setstate]=useState({selectedbranch:0})  
+        const[state,setstate]=useState({selectedbranch:0})  ;
+        const [states,setstates]=useState({detailtagname:"Personal Details"})  ;
         var count=0;
         function getbranch(event){
             for(var i=0;i<list.length;i++){
@@ -353,41 +351,73 @@ function Details(){
             }
            
         }
-    
-        console.log(state.selectedbranch);
+        function personal(){
+            document.getElementById('personal').style.display="block";
+            document.getElementById('education').style.display="none";
+        }
+        function education(){
+            document.getElementById('personal').style.display="none";
+            document.getElementById('education').style.display="block";
+            setstates({detailtagname:"Education Details"})
+        }
     return(
-<div style={{overflow:"visible"}} className="datail container">
-   <div className=" leave1" class="rounded float-start"> <img  src={Leave1}></img></div>
-   <div className=" leave2" class="rounded float-end"> <img  src={Leave2}></img></div>
-    <header className="profile text-center mt-5 pt-5"><h3>Profile</h3>
-<p>Add Informatin About Yourself</p><div className="line"></div></header>
-<div className="detailsform  pt-5">
-  <div className="text-center"> <img src={Img1}></img> <img className="plant2" src={Img2}></img></div>
-<form>
+        <div className="maindetail">
+            <div className="text-center">
+          <div><img src={Personal} id="persoaldetailimg" className="mx-5"></img><img src={Education} id="educationdetailimg" className="mx-5"></img></div>
+        <div className="my-3 tag" >{states.detailtagname}</div></div>
+<div className="detail card" id="personal" style={{width:'50%',backgroundImage:'url(/detailback.svg)'}}>
+<div className="detailsform  card-body">
+<form className="card-text">
     <div className="form-group">
-    <label for="firstname">FIRST NAME</label><br></br>
-    <input  type="text" name="firstname" id="firstname" className="form-control" required />
+    <label for="firstname">Title</label>
+    <input  type="text" name="title" id="title" className="form-control" required />
     </div>
     <div className="form-group">
-    <label>SECOND NAME</label><br></br>
-    <input type="text" name="secondname" className="form-control" required />
+    <label>First Name</label>
+    <input type="text" name="firstname" className="form-control" required />
     </div>
     <div className="form-group">
-    <label>PHONE NO.</label><br></br>
-    <input type="number" name="number" className="form-control" required />
+    <label>Last Name</label>
+    <input type="text" name="lastname" className="form-control" required />
     </div>
     <div className="form-group">
-    <label>Degree</label><br></br>
+    <label>Mobile</label>
+    <input type="number" name="phone" className="form-control" required />
+    </div>
+    <div className="form-group">
+    <label>Blood Group</label>
+    <input type="text" name="blood" className="form-control" required />
+    </div>
+    <div className="form-group">
+    <label>Will you try to donate blood in emergency situation ?</label><br></br>
+    <input type="text" name="donate" className="form-control" required />
+    </div>
+    <div className="form-group">
+    <label>Home Location</label>
+    <input type="text" name="location" className="form-control" required />
+    </div>
+   <div className="ml-5 text-center"><button className="btn px-5"  type="submit" onClick={education} value="Next">Next</button></div>
+    </form> </div></div>
+    <div className="detail card" id="education"  style={{width:'50%',backgroundImage:'url(/detailback.svg)',paddingBottom:'100px',display:'none'}}>
+<div className="detailsform  card-body my-5">
+    <form className="card-text">
+    <div className="form-group">
+    <label>Degree</label>
     <select onChange={getbranch} className="form-control"><option></option>{course.map((courses)=>(<option value={courses} id={courses}>{courses}</option>))}</select></div>
-    <label>College Name</label><br></br>
-    <input type="text" name="collegename" className="form-control" required /><br></br>
+    <div className="form-group">
+   <label>College Name</label>
+    <input type="text" name="collegename" className="form-control" required /></div>
     <div id="branchlist" style={{display:"none"}} className="branchinput">
-    <label>Branch Name</label><br></br>
-    <select className="form-control">{branch[state.selectedbranch].map((branchs)=>(<option value={branchs} id={branchs}>{branchs}</option>))}</select></div>
-    <label>YEAR</label><br></br>
-    <input type="number" name="number" className="form-control" required /><br></br>
-   <div className="ml-5"><button className="mt-4 pt-1 pb-1"  type="submit" value="Next">Next</button></div>
-    </form></div></div>
+    <label>Branch Name</label>
+    <select className="form-control">{branch[state.selectedbranch].map((branchs)=>(<option value={branchs} id={branchs}>{branchs}</option>))}</select></div>    
+    <div className="form-group">
+        <br></br>
+    <label>Start year</label>
+    <input type="date"  /></div>
+    <div className="ml-5 text-center"><button className="btn px-5"  type="submit" value="Next">Next</button></div>
+   </form>
+    </div></div></div>
+    
     );
 }
 export default Details;
