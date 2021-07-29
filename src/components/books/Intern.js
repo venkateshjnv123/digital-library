@@ -1,12 +1,6 @@
 import React from 'react';
 import './Intern.css';
 import Courseimg1 from '../images/Intern img.svg';
-//import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-
-//import Btechimg2 from './images/btechsubjectnotfoundimg.svg';
-//import {Link} from 'react-router-dom';
-//import Requestleaves from './images/start img2.svg';
-
 function Intern(){
     var array=[{
         company:"Magic of Maths",
@@ -59,12 +53,7 @@ function Intern(){
       },
     ];
       
-      function filterFunction() {
-        //var count=0;
-          //document.getElementById("siva1").style.display="none";
-          //var siva=[];
-         // var k=0;
-          
+      function filterFunction() {   
           var input, filter,i;
           input = document.getElementById("myInput");
           filter = input.value.toUpperCase();
@@ -75,7 +64,6 @@ function Intern(){
           document.getElementById(array[i].company).style.display = "";
         
             }
-          //console.log(a[i]);
        else {
            document.getElementById(array[i].company).style.display= "none";
         
