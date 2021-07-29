@@ -50,7 +50,7 @@
 
 .buttons{
     left:500px;
-    top: 500px;
+    top: 400px;
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -60,7 +60,7 @@
     width: 200px;
     height: 50px;
     font-family: Philosopher;
-    font-size: 26px;
+    font-size: 22px;
     color: #000000;
     background: #6DD2AE;
     padding: 8px 12px;
@@ -72,6 +72,12 @@
 .btn1:hover{
     box-shadow: 0 0 0 2px darkgreen;
 }
+.imag2{
+    width: 110%;
+    top: 0px;
+    height: 241px;
+    position: relative;
+}
 
 i:hover{
     color: black;
@@ -80,7 +86,7 @@ i:hover{
 .circle{
     height: 80px;
     width: 80px;
-    top: 800px;
+    top: 600px;
     left:250px;
     position: absolute;
     border-radius: 50%;

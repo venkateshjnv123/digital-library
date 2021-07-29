@@ -16,3 +16,7 @@
                      <input name="branch" type="text" placeholder="paste the link here" />
                      <br/>
                      <input type='submit'/> 
+
+
+
+style={{ width: '60%' , marginLeft:'auto', marginRight:'auto'}}

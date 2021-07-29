@@ -1,7 +1,8 @@
 import React, {useState} from 'react'
-import Navbar1 from './Navbar1'
+
 import Sidebar from './sidebar'
 import Navbar2 from './Navbar2'
+import NavBar from './navbarboot'
 const Navigation = () => {
  const [isOpen, setIsOpen] = useState(false);
  

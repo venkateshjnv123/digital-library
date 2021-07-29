@@ -57,30 +57,30 @@ function Navbar2() {
             <NavMenu onClick={handleClick} click={click}>
               <NavItem>
                 <NavLinks to='/' onClick={closeMobileMenu}>
-                  Home
+                  HOME
                 </NavLinks>
               </NavItem>
               <NavItem>
                 <NavLinks to='/team' onClick={closeMobileMenu}>
-                  Team
+                 TEAM
                 </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to='/uploads' onClick={closeMobileMenu}>
-                  uploads
+                <NavLinks to='/login' onClick={closeMobileMenu}>
+                  ABOUT
                 </NavLinks>
               </NavItem>
               <NavItem>
                 <NavLinks to='/requests' onClick={closeMobileMenu}>
-                  Requests
+                 BLOG
                 </NavLinks>
               </NavItem>
               <NavItem>
                 <NavLinks to='/saved' onClick={closeMobileMenu}>
-                  Saved
+                 CONTACTS
                 </NavLinks>
               </NavItem>
-              <NavItemBtn>
+              {/* <NavItemBtn>
                 {button ? (
                   <NavBtnLink to='/Logout'>
                     <Button primary>Logout</Button>
@@ -92,7 +92,10 @@ function Navbar2() {
                     </Button>
                   </NavBtnLink>
                 )}
-              </NavItemBtn>
+              </NavItemBtn> */}
+
+            <i className="fas fa-bell" style={{color: 'black', margin: 20, top:10}}></i>
+            <i className="fas fa-image" style={{color: 'black', margin: 20, top:10}}></i>
             </NavMenu>
           </NavbarContainer>
         </Nav>
