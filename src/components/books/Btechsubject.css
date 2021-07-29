@@ -1,110 +1,15 @@
-.books{
-    
-    margin-top: 100px;
-}
-.listofbooks input{
-    font-family: Philosopher;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 20px;
-    border: 0px;
-    color: #000000;
-    background: #6DD2AE;
-    border-radius: 30px;
-    text-align: center;
-    width: 100px;
-    margin-left: 10px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    padding: 10px;
-}
-.listofbookstagline .p1 {
-    font-family: Philosopher;
-font-style: normal;
-font-weight: bold;
-
-line-height: 124%;
-margin-top: 70px; margin-left: -10px;
-text-align: center;
-/* or 30px */
-
-color: #002140;
-}
-@media screen and (max-width:600px) {
-    .books .img1{
-        width:50%;
-    }
-    .listofbookstagline .p1{
-        font-size: 20px;
-        margin-left: -100px;
-    }
-}
- .books .img1{
-    float: right;
-    margin-top: -180px;
- }
-.searchbar{
-    background: #FFFFFF;
-    border: 1px solid #002140;
-    box-sizing: border-box;
-    border-radius: 14px;
-margin-top: 80px;
-height: 40px;
-text-align: center;
-
-width: 45%;
-font-size: 15px;
-}
-.books .buttons .buttontype{
-    background-color:#fdfdfd;
-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
-margin-left: 4%;
-margin-right: 4%;
-margin-top: 15px;
-width: 340px;
-height: 340px;
-border: 1px;
-}
-
-.books .buttons .name .span1{
-    font-size: 10px;
-    float: left;
-    color: rgba(0, 0, 0, 0.8);
-    margin-left: 3px;
-}
-.books .buttons .name{
-    padding: 5px;
-    padding-bottom: 10px;
-background: #6DD2AE;
-border-radius: 15px;
+.books .titlecontent{
 font-family: Philosopher;
 font-style: normal;
-font-weight: bold;
+font-weight: normal;
 font-size: 18px;
-line-height: 20px;
-color: #000000;
-margin-top: 10px;
-width: 300px;
-margin-left: 5%;
-margin-right: 5%;
+text-align: center;
+margin-top: 50px;
+margin-left: 15%;
+margin-right: 15%;
 }
-.books .buttons .lower{
-    line-height: 90px;
-}
-.books .buttons .lower .lowerimg1{
- padding-right: 50px;
-}
-.books .buttons .lower .lowerimg2{
-    margin-left: 50px;
-}
-.books .buttons  .likebutton{
-    height: 5px;
-}
-.books .buttons .lower img{
-    width: 20px;
-}
-.books .notfound{
-    visibility: hidden;
+.books .lower img{
+    width: 18px;
 }
 .books .notfound .p1{
     font-family: Philosopher;
@@ -112,36 +17,15 @@ font-style: normal;
 font-weight: bold;
 font-size: 16px;
 line-height: 18px;
-/* identical to box height */
-
-
 align-items: center;
-
 color: #108158;
 } 
-.books .notfound .p2{
-    
-font-family: Philosopher;
-font-style: normal;
-font-weight: bold;
-font-size: 14px;
-line-height: 16px;
-/* identical to box height */
-
-
-align-items: center;
-
-color: #000000;
-
-}
 .books .notfound .p3{
     font-family: Roboto;
 font-style: normal;
 font-weight: normal;
 font-size: 15px;
-line-height: 13px;
 text-align: center;
-
 color: #000000;
 }
 .books .notfound button{
@@ -149,18 +33,148 @@ color: #000000;
 font-style: normal;
 font-weight: normal;
 font-size: 24px;
-line-height: 27px;
-/* identical to box height */
-
-
 color: #000000;
-
 background: #7DDAB9;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 border-radius: 25px;
-width: 142px;
-height: 34px;
 }
-.books .notfound .imgs{
-    width: 50%;
+.books .booking{
+    background: linear-gradient(180deg, #6DD2AE 1.95%, #FFFFFF 100%);
+
+}
+.books .booking .listofbookstagline{
+    font-family: Philosopher;
+font-style: normal;
+font-weight: bold;
+color: #2F3D5E;
+}
+.books .booking .img1{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.books .booking .searchbar{
+    background: #FFFFFF;
+border: 1px solid #002140;
+box-sizing: border-box;
+border-radius: 10px;
+width: 30%;
+min-width: 300px;
+display: inline-block;
+}
+.books .booking .search span{
+    position: relative;
+    font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 10px;
+display:inline;
+align-items: center;
+color: #999999;
+left: 100px;
+}
+.books .booking .search span img{
+    margin-left: 5px;
+    width: 10px;
+}
+.books .booking .search .line img{
+    width: 1px;
+    height: 15px;
+    color: #000;
+}
+.books .booking .search{
+    margin-bottom: 15px;
+    text-align: center;
+}
+.books .booking .searchbar::placeholder{
+    font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 10px;
+color: #002140;
+}
+.books .booksbar button{
+    font-family: Josefin Sans;
+font-style: normal;
+font-size: 12px;
+font-weight: 500;
+color: #000000;
+border: 0px;
+background-color: #C9EDDC;
+}
+.books .span3{
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    color: #000000;
+}
+.books .title{
+    font-family: DM Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+color: #000000;
+}
+.books .card{
+    border: 0px;
+    background: #FDFDFD;
+}
+.books .maincard{
+    background: #FDFDFD;
+box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+}
+.books .span1{
+    font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+color: #968F8F;
+}
+.books .span2{
+    font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+color: #000000;
+}
+.books .btn1{
+    background: #6DD2AE;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+font-family: Philosopher;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+}
+@media screen and (max-width:600px) {
+    .books .img1{
+        width:40%;
+        margin-bottom: 10px;
+    }
+    .books iframe{
+        width: 100%;
+    }
+    .books .titlecontent{
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+}
+@media screen and (max-width:400px) {
+    .books .booking .search span{
+        position: relative;
+        top: 25px;
+        left: -100px;
+    }
+}
+@media screen and (min-width:601px) {
+    .books .img1{
+        width: 20%;
+    }
+    .books .booksbar button{
+        margin-left:3%;
+    }
+    .books .booking .search{
+        margin-top: -5%;
+    }
+
 }
