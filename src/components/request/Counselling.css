@@ -1,0 +1,42 @@
+.counselling .input1{
+
+    font-family: Philosopher;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 20px;
+    border: 0px;
+    color: #000000;
+    background: #6DD2AE;
+    border-radius: 30px;
+    text-align: center;
+    width: 120px;
+    margin-top: 100px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    padding: 10px;
+}
+.counselling button{
+    font-family: Philosopher;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 27px;
+/* identical to box height */
+width: 100px;
+margin-top: 10px;
+color: #000000;
+background: #6DD2AE;
+border-radius: 20px;
+}
+.counselling .btn1{
+    margin-top: 100px;
+}
+.counselling .images{
+    width: 50%;
+}
+.counselling .img{
+    width: 30%;
+}
+.counselling .btn2{
+    margin-bottom: 40px;
+}
