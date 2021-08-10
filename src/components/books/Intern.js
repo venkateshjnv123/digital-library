@@ -77,7 +77,6 @@ function Intern(){
           if (txt.toUpperCase().indexOf(filter) > -1) {
            
         document.getElementById(array[i].book).style.display = "";
-        count++;
           }
        
      else {
