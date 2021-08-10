@@ -23,7 +23,7 @@ import ULogin from './Profile/profile';
 
 import Btechsubject from './books/Btechsubject.js';
 import Details from './profile/Details.js';
-import Request from './request/Request.js';
+import Requested from './request/request.js';
 import Videos from './books/Videos.js';
 import Courses from './books/Courses.js';
 import Journels from './books/Journels.js';
