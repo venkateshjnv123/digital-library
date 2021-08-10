@@ -1,81 +1,42 @@
-.detailsform form{
-    margin-left: 25%;
+.detail{
+margin: auto;
+background: #FFFFFF;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 5px;
 }
-.detailsform label{
-    
-    font-size: 15px;
-    font-weight: 500;
+.maindetail img{
+    width: 30px;
 }
-
-.detailsform .plant2{
-    margin-left: -100px;
-    margin-top: 30px;
+.maindetail{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background: #E5E5E5;
+    padding-bottom: 100%;
 }
-.detailsform input{
-    width:75%;
+.maindetail .tag{
+font-size: 18px;
 }
-.detailsform select{
-    width: 75%;
+.detail input {
+    width: 100%;
+    height: 25px;
+    background: #FFFFFF;
+border: 1px solid #000000;
+box-sizing: border-box;
 }
-.detailsform button{
-    width: 100px;
-    border-radius: 10px;
-    margin-left: 25%;
-    background-color: #6DD2AE;
-    font-family: Philosopher;
+.detail select{
+    width: 100%;
+    height: 25px;
+    background: #FFFFFF;
+border: 1px solid #000000;
+box-sizing: border-box;
+}
+.detail .detailsform{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.detail .detailsform label{
+    font-family: DM Sans;
 font-style: normal;
 font-weight: normal;
-font-size: 24px;
-line-height: 20px;
-}
-.detailsform option{
-    font-size: 15px;
-}
-.profile .line{
-    width: 100%;
-    
-    height: 1px;
-    background-color:#000000;
-}
-.profile h3{
-    font-family :"Roboto";
-font-weight :500;
-font-style :normal;
-Size: 20px;
-line-height :20px;
-color: #046844;
-;
-}
-.profile p{
-    position: relative;
-    font-family: Roboto;
-font-style: normal;
-font-weight: 200;
-font-size: 18px;
-line-height: 20px;
-color: #000000;
-}
-.detail{
-    width:80%;
-    height:100%;
-}
- .upload  input{
-    background: #6DD2AE;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-border-radius: 25px;
-}
-.photoskip{
-    font-family: Philosopher;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 20px;
-    border: 0px;
-    color: #000000;
-    background: #6DD2AE;
-    border-radius: 30px;
-    text-align: center;
-    width: 100px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    padding: 10px;
+font-size: 12px;
 }

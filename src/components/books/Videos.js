@@ -1,110 +1,111 @@
 import React from 'react';
-import './Videos.css';
+import './Btechsubject.css';
+import 'bootstrap/dist/css/bootstrap.min.css'; 
 import Likes from '../images/book likes.svg';
 import Share from '../images/share.svg'
 import Save from '../images/book save.svg';
-import Videoimg1 from '../images/videos img.svg';
-//import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-
-import Btechimg2 from '../images/btechsubjectnotfoundimg.svg';
-import {Link} from 'react-router-dom';
-import Requestleaves from '../images/start img2.svg';
-
+import Dots from '../images/bookdot.svg';
+import Btechimg1 from '../images/videos img.svg';
+import Comment from '../images/book comment.svg'
 function Videos(){
-  var array=[{
-    book:"Magic of Maths",
-    discription:"BS Grewal",
-    youtube:"5000",
-    website:"something",
-    likes:361
-  },
-  {
-    book:"Magic of Maths",
-    discription:"BS Grewal",
-    youtube:"5000",
-    website:"something"
-  },
-             
-  {
-    book:"Magic of Maths",
-    discription:"BS Grewal",
-    youtube:"5000",
-    website:"something"
-  },
-  {
-    book:"Magic of Maths",
-    discription:"BS Grewal",
-    youtube:"5000",
-    youtube:"something"
-  },
-  {
-    book:"Magic of Maths",
-   
-    discription:"BS Grewal",
-    youtube:"5000",
-    website:"something"
-  },
-  {
-    book:"Magic of Maths",
-    discription:"BS Grewal",
-    youtube:"5000",
-    website:"something"
-  },
-];
-  
+    var array=[{
+      book:"Magic of Maths",
+      channel:'something',
+      source:"Engineering Maths",
+      website:"www.google.com",
+      likes:361
+    },
+    {
+      book:"civil engineerig materials",
+      channel:"some",
+      source:"civil engineerig materials",
+      website:"www.google1.com",
+      likes:36
+    },
+    {
+      book:"python",
+      channel:"dsfdf",
+      source:"civil engineerig materials",
+      website:"www.google1.com",
+      likes:3650
+    },
+    {
+      book:"theory +",
+      channel:"kgfs",
+      source:"civil engineerig materials",
+      website:"www.google1.com",
+      likes:350
+    },
+    {
+      book:"java",
+      channel:"prepare",
+      source:"civil engineerig materials",
+      website:"www.google1.com",
+      likes:300
+    },
+    {
+      book:"commom",
+      channel:"moreone",
+      source:"civil engineerig materials",
+      website:"www.google1.com",
+      likes:30
+    },
+  ];
+    
+    function filterFunction() {
       
-      function filterFunction() {
-        var count=0;
-          //document.getElementById("siva1").style.display="none";
-          //var siva=[];
-         // var k=0;
-          
-          var input, filter,i;
-          input = document.getElementById("myInput");
-          filter = input.value.toUpperCase();
-          for (i = 0; i < array.length; i++) {
-           var txt = array[i].book;
-            if (txt.toUpperCase().indexOf(filter) > -1) {
-             
-          document.getElementById(array[i].book).style.display = "";
-          count++;
-            }
-          //console.log(a[i]);
-       else {
-           document.getElementById(array[i].book).style.display= "none";
         
-             }
-             
+        console.log("10");
+        var input, filter,i;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        for (i = 0; i < array.length; i++) {
+         var txt = array[i].book;
+          if (txt.toUpperCase().indexOf(filter) > -1) {
+           
+        document.getElementById(array[i].book).style.display = "";
+        
           }
-          console.log(count);
-          if(count===0){
-            document.getElementById("videolist").style.display="none";
-            document.getElementById("notfound").style.display="block";
-          }
-          else{
-            document.getElementById("notfound").style.display="none"; 
-            document.getElementById("videolist").style.display="block";
-          }
-        }
-        function getid(event){
-          alert(event.target.src);
-          
       
+     else {
+         document.getElementById(array[i].book).style.display= "none";
+      
+           }
+          }
+      }
+      function getid(event){
+        alert(event.target.src);
+      }
+      function borderbottom(event){
+        document.getElementById(event.target.id).style.borderBottom="1px solid black";
+        for(var bb=1;bb<4;bb++){
+          if(event.target.id!='btn'+bb){
+            document.getElementById('btn'+bb).style.borderBottom="0px";
+          }
         }
+      }
     return(
-        <div className="videos">
-            <div className="videosconst"><input type="text" readOnly value="Videos" ></input></div>
-            <div><img src={Videoimg1} className="img1" alt={Videoimg1}></img></div>
-            <div style={{textAlign:"center"}} className="mt-5 search"><input type="text" placeholder="Search for the video" id="myInput" onKeyUp={filterFunction} className="searchbar"></input>
-        </div>
-        <div id="videolist">
-        <div className="text-center mt-5  buttons">{array.map((branch)=>(<div value={branch.book} id={branch.book} className="buttontype btn " ><h2 className="company">{branch.book}</h2><div className="eligibility"><div className="span2" id="span2">{branch.discription}</div></div><div className="stipend"><span className="span1">source</span><span className="span2">{branch.youtube}</span></div><div className="website"><span className="span1">{branch.website}</span></div><div className="lower"><span className="lowerimg1"><img src={Share}></img></span><img src={Likes} onClick={getid}></img><span>{branch.likes}</span><span className="lowerimg2"><img src={Save} alt={Save}></img></span></div></div>))}</div>
+<div className="books">
+<div className="booking">
+  <div className="d-flex justify-content-between mx-5">
+   <div className="listofbookstagline display-5 mt-5 ">Excellently curated videos</div>
+   <img src={Btechimg1} className="img1"></img>
 </div>
-<div className="notfound text-center mt-5" id="notfound">
-<img src={Btechimg2} ></img>
-<p className="p1">sorry i dont have what you are looking for</p>
-
-<img src={Requestleaves} className="imgs"></img><img src={Requestleaves} className='imgs'></img>
+<div className="search"><span><i className='fa fa-search' style={{fontSize:'11px',color:'black'}}></i></span><input type="text" placeholder="Search for the book" id="myInput" className="searchbar form-control text-center" onKeyUp={filterFunction}></input>
+  </div>
+  </div>
+  <br></br>
+  <nav className="booksbar" style={{backgroundColor:'#C9EDDC',height:'25px'}}>
+    <div className="bardiv" style={{paddingTop:'5px'}}>
+    <button className="barbtn1" id="btn1" onClick={borderbottom}>HOME</button>
+    <button className="barbtn2" id="btn2" onClick={borderbottom}>TRENDING</button>
+    <button className="barbtn4" id="btn3" onClick={borderbottom}>SAVED</button>
+    </div>
+  </nav>
+  <div className="row">
+  {array.map((book)=>( 
+    <div className=" py-3 col-sm-6" id={book.book}><div className="card maincard h-100 mx-5"><div className='d-flex'><div className=' my-5 video' style={{width:'50%',marginLeft:'5%'}}><embed src='https://www.youtube.com/embed/E7wJTI-1dvQ' width='80%' height="70%" 
+    title='video' /></div><div className="card-body"><p className="card-title title">{book.book}</p><p className="card-text"><span className="span1">Channel : </span><span className="span2">{book.channel}</span></p><p className="card-text"><span className="span1">Source : </span><span className="span2">{book.source}</span></p><button className="btn btn1">{book.website}</button><div className="lower my-5" style={{display:'flex'}}><span className="lowerimg1"><img src={Share} className="mx-3"></img></span><img src={Likes} className="mx-1" onClick={getid}></img><span>{book.likes}</span><span className="lowerimg2 mx-3"><img src={Save} alt={Save}></img></span><span className="mx-3"><img src={Comment}></img></span></div></div><div><img src={Dots} style={{width:'4px',marginRight:'10px',marginTop:'10px'}}></img></div></div></div></div>))}
 </div>
 </div>
     );
