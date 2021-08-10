@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import { FaMagento } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import { Container } from './globalStyles';
 
 export const Nav = styled.nav`
   background: #ffffff;
@@ -15,11 +14,23 @@ export const Nav = styled.nav`
   z-index: 999;
 `;
 
-export const NavbarContainer = styled(Container)`
+export const NavbarContainer = styled.div`
   display: flex;
+  align-items: center;
+  text-align: center;
+
   justify-content: space-around;
-  height: 70px;
-  ${Container}
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 50px;
+  padding-left: 50px;
+  @media screen and (max-width: 991px) {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
 `;
 
 export const NavLogo = styled.div`
@@ -88,11 +99,20 @@ export const NavMenu = styled.ul`
 `;
 
 export const NavItem = styled.li`
-  height: 80px;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom:auto;
+
+  &:hover {
+    color: #4b59f7;
+    transition: all 0.3s ease;
+  }
   @media screen and (max-width: 960px) {
     width: 100%;
     &:hover {
       border: none;
+      color: #4b59f7;
+      transition: all 0.3s ease;
     }
   }
 `;
@@ -111,23 +131,17 @@ export const NavLinks = styled(Link)`
   color: #000;
   display: flex;
   align-items: center;
-
+  margin-top: auto;
+  margin-bottom:auto;
   text-decoration: none;
   padding: 20px 20px;
   height: 100%;
-  &:hover {
-    color: #4b59f7;
-    transition: all 0.3s ease;
-  }
+
   @media screen and (max-width: 960px) {
     text-align: center;
     padding: 32px;
     width: 100%;
     display: table;
-    &:hover {
-      color: #4b59f7;
-      transition: all 0.3s ease;
-    }
   }
 `;
 

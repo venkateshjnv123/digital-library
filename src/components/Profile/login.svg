@@ -4,7 +4,7 @@
 <rect width="720" height="758" fill="url(#paint1_linear)" fill-opacity="0.5"/>
 <defs>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-<use xlink:href="#image0" transform="translate(-0.159373 0.00201497) scale(0.00139819)"/>
+<use xlink:href="#image0" transform="translate(-0.428829 0.00401581) scale(0.00139819)"/>
 </pattern>
 <linearGradient id="paint0_linear" x1="360" y1="-87.3477" x2="360" y2="876.438" gradientUnits="userSpaceOnUse">
 <stop stop-color="#125038"/>

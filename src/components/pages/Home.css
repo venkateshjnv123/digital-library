@@ -6,7 +6,7 @@
     height: 470px;
     filter: drop-shadow(0px, 4px, 4px, #000000);
 
-    
+
 }
 .main{
     height: 1000px;
@@ -20,7 +20,7 @@
     border-radius: 24px;
     filter: drop-shadow(0px, 4px, 4px, #000000);
 
-    
+
 }
 .head{
     position: absolute;
@@ -92,7 +92,7 @@ i:hover{
     border-radius: 50%;
     background: #6DD2AE;
 }
-i{
+#venky{
     justify-self: center;
     position: relative;
     top:20px;
@@ -142,16 +142,16 @@ i{
             font-size: 16px;
             letter-spacing: 0.2px;
             color: #000000;
-        
+
         }
-        
+
         .buttons{
             left:120px;
             top: 500px;
             display: flex;
             flex-direction: column;
             position: absolute;
-        
+
         }
         .btn1{
             width: 150px;
@@ -167,7 +167,7 @@ i{
             border: none;
         }
 
-        
+
 .circle{
     height: 60px;
     width: 60px;
@@ -184,5 +184,5 @@ i{
     left:17px;
     font-size: 24px;
     align-self: center;}
-    
+
 }

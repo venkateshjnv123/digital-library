@@ -27,7 +27,7 @@ function Home(){
 
           <div className="Logo">
               <Logo /></div>
-            <div className="circle"><Link to='/send'> <i className="fas fa-upload" /> </Link> </div>
+            <div className="circle"><Link to='/send'> <i id='venky' className="fas fa-upload" /> </Link> </div>
            <div className="buttons">
                 <button className="btn1">Books</button>
                 <button className="btn1">Interns</button>
