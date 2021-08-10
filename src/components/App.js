@@ -22,7 +22,7 @@ import Unotes from './dataUpload/Notes';
 import ULogin from './Profile/profile';
 
 import Btechsubject from './books/Btechsubject.js';
-import Details from './profile/Details.js';
+import Details from './Profile/Details.js';
 import Requested from './request/request.js';
 import Videos from './books/Videos.js';
 import Courses from './books/Courses.js';
